@@ -12,7 +12,7 @@ import java.util.List;
 
 @Repository
 public interface EmployeeRepository extends JpaRepository<Employee, Long>,
-    JpaSpecificationExecutor, QuerydslPredicateExecutor<Employee>,
+    JpaSpecificationExecutor<Employee>, QuerydslPredicateExecutor<Employee>,
     EmployeeRepositoryCustom {
 
   List<Employee> findByNameContainingIgnoreCaseAndSalaryGreaterThanOrderBySalaryDesc(
