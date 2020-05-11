@@ -1,5 +1,7 @@
 package io.github.mbukowicz.springdataqueries.employee;
 
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Slice;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.data.jpa.repository.Query;
@@ -36,4 +38,7 @@ public interface EmployeeRepository extends JpaRepository<Employee, Long>,
   )
   List<Employee> findByNameLikeAndSalaryAboveNative(
       @Param("name") String name, @Param("salary") BigDecimal salary);
+
+  @Query("SELECT e FROM Employee e")
+  Slice<Employee> findAllSliced(Pageable pageable);
 }

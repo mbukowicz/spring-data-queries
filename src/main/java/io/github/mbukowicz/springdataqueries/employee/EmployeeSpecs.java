@@ -15,4 +15,10 @@ public class EmployeeSpecs {
     return (Specification<Employee>) (employee, query, builder) ->
         builder.greaterThan(employee.get("salary"), salary);
   }
+
+  public static Specification<Employee> hasSalaryBetween(
+      BigDecimal from, BigDecimal to) {
+    return (Specification<Employee>) (employee, query, builder) ->
+        builder.between(employee.get("salary"), from, to);
+  }
 }

@@ -1,0 +1,10 @@
+INSERT INTO employee (id, name, salary) VALUES (1, 'Bob',    5000.00);
+INSERT INTO employee (id, name, salary) VALUES (2, 'Trent',  7500.00);
+INSERT INTO employee (id, name, salary) VALUES (3, 'Alice',  10000.00);
+INSERT INTO employee (id, name, salary) VALUES (4,  'Carol',  4000.00);
+INSERT INTO employee (id, name, salary) VALUES (5,  'Chuck',  4100.00);
+INSERT INTO employee (id, name, salary) VALUES (6,  'Craig',  4200.00);
+INSERT INTO employee (id, name, salary) VALUES (7,  'David',  4300.00);
+INSERT INTO employee (id, name, salary) VALUES (8,  'Frank',  4400.00);
+INSERT INTO employee (id, name, salary) VALUES (9,  'Oscar',  4500.00);
+INSERT INTO employee (id, name, salary) VALUES (10, 'Walter', 4600.00);
